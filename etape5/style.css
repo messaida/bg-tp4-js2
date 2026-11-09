@@ -1,0 +1,84 @@
+/* police globale : Calibri en premier choix */
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* le conteneur centre le tableau au milieu de la page */
+#table_container {
+    width: 800px;
+    margin: 30px auto;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* ligne d'entête en bleu */
+th {
+    background-color: #0077b6;
+    color: white;
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* les 3 classes de colonnes */
+.col_number {
+    width: 60px;
+    text-align: center;
+}
+
+td.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    width: 60px;
+    text-align: center;
+}
+/* espace résumé : barre grise sous le tableau, nombre de lignes à gauche et total à droite */
+#container_summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+    background-color: #f2f2f2;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+}
+
+#container_summary p {
+    margin: 8px 0;
+}
+/* formulaire de saisie au dessus du tableau */
+#form_container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.form_group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.form_label {
+    font-weight: bold;
+}
+
+.form_field {
+    padding: 4px;
+    border: 1px solid #bbb;
+}
